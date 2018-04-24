@@ -1,8 +1,17 @@
 module.exports = function ({types: t}) {
   return {
     visitor: {
-      StringLiteral({node}) {
-        node.value = "bar";
+      CallExpression(path) {
+        const {node} = path;
+
+        if (t.isIdentifier(node.callee, {name: "log"})) {
+          const consoleLog = t.memberExpression(
+            t.identifier("console"),
+            t.identifier("log")
+          );
+
+          node.callee = consoleLog;
+        }
       }
     }
   }
