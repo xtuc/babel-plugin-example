@@ -1,1 +1,4 @@
-console.log("foo");
+// @async
+function test() {
+  0;
+}
