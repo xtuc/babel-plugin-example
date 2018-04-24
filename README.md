@@ -2,12 +2,12 @@
 
 ## Run it directly
 
-```js
+```sh
 ./node_modules/.bin/babel-node src/index.js
 ```
 
 ## Transpile it
 
-```js
+```sh
 ./node_modules/.bin/babel src/index.js
 ```
