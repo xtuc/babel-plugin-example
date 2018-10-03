@@ -17,3 +17,7 @@ node dist/index.js
 ## log -> console.log transformation
 
 https://github.com/xtuc/babel-plugin-example/tree/feat-transpile-log
+
+## fake decorator
+
+https://github.com/xtuc/babel-plugin-example/tree/feat-transform-comments
